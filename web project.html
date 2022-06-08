@@ -1,0 +1,181 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=b, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="web project.css"
+</head>
+<body> TEXT= "white">
+    
+    THIS IS THE BODY
+    <br>
+    <caption><B>IMAGE</B></caption>
+    <br>
+    <br>
+    <img src=" https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg">
+
+    <br>
+
+    <caption><B>link</B></caption>
+    <br>
+    <a href="myname.html"> this is my name</a>
+
+
+    <br>
+    <caption><B>LISTS</B></caption>
+    <OL> <B>
+        <LI>X</LI>
+        <LI>Y</LI>
+        <LI>B</LI>
+        <LI>C</LI>
+        <LI>N</LI>
+    </B></OL>
+<hr>
+
+<UL>
+    <LI>NAME</LI>
+    <LI>SCHOOL</LI>
+    <LI>CHURCH</LI>
+    <LI>TECH</LI>
+    <LI>PHONE</LI>
+</UL>
+    
+    <table>  
+        <caption><b>THIS IS THE MAIN TABLE</b></caption> 
+        <TR>
+           <TH>block 1</TH>
+           <TH>block 2</TH>
+           <TH>block 3</TH>
+
+        </TR>
+        <TR>
+            <TD>ONES</TD>
+            <TD>TWO</TD>
+            <TD>THREE</TD>
+        </TR>
+        <TR>
+            <TD>student</TD>
+            <TD>staff</TD>
+            <TD>admin</TD>
+        </TR>
+
+        <TR>
+            <TD>male</TD>
+            <TD>female</TD>
+            <TD>INFANT</TD>
+        </TR>
+        <TR>
+            <TD colspan="2">new data 1</TD>
+            <td>new data 2</td>
+        </TR>
+
+        <TR>
+            <TD rowspan="2">new data 1</TD>
+            <td>new data 2</td>
+        </TR>
+
+
+        <hr>
+
+    </table>
+    <hr>
+    <br>
+    <caption><b>THIS IS THE MAIN FORM</b></caption>
+    <!--this is the main registration form-->
+    <form>
+        <table>
+            
+            <tr>
+                <td>name:</td>
+                <td><input type="name" placeholder="name" name="" maxlength="10"</td>
+            </tr>
+
+            <tr>
+                <td>password:</td>
+                <td><input type="password" placeholder="password" name="" maxlength="4"</td>
+            </tr>
+
+            <tr>
+                <td>email:</td>
+                <td><input type="mail" placeholder="email" name=""</td>
+            </tr>
+
+            <tr>
+                <td>gender:</td>
+                <td><input type="radio" name="gender" >male</td>
+                <td><input type="radio" name="gender">female</td>
+              </tr> 
+              <tr>
+                  <td>MEAL:</td>
+                  <td>
+                      <select>
+                          <option value="">lunch</option>
+                          <option value="">breakfast</option>
+                          <option value="">supper</option>
+                      </select>
+                  </td>
+              </tr>
+              <tr>
+                <td>phone:</td>
+                <td>
+                    <select>
+                        <option>+253</option>
+                        <option>+254</option>
+                        <option>+255</option>
+                        <option>+256</option>
+                        
+                    </select>
+                
+                    <input type="phone" placeholder="0112****" name="">
+                </td>
+                <textarea name="maths" id="" cols="30" rows="10">
+                    x=10
+                    y=20
+                </textarea>       
+            </tr>
+                 
+         </table>
+    </form>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script></body>
+</html>

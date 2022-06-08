@@ -1,0 +1,27 @@
+<STYle>
+img {
+    height: 100px;
+    width: 50px;
+    border-radius: 50px;
+}
+table {
+    height: 200px;
+    width: 350px;
+    padding: 30px;
+    margin: 50px;
+    font-size: 20px;
+    background-color: burlywood;
+
+}
+tr{
+    background-color:blueviolet;
+}
+body{
+    background-color: rgb(90, 64, 64);
+}
+a{
+    a:link :color:red;
+}
+
+
+</STYle>
